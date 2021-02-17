@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="twitter:" content="">
-    <title></title>
-  </head>
-  <body>
 
-  </body>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Project</title>
+</head>
+
+<body>
+  <section class="showcase">
+    <header>
+      <h2 class="logo">DEVI HARI CHARAN</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="test2.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h4>Everything is theoretically</h4>
+      <h2>Impossible,</h2>
+      <h4>until it is done</h4>
+      <a href="#">Explore</a>
+    </div>
+    <ul class="social">
+      <li><a href="https://www.facebook.com/bharmavath/" target="_blank"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <li><a href="https://twitter.com/BDHC_1712" target="_blank"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="https://www.instagram.com/deviharicharan/" target="_blank"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">News</a></li>
+      <li><a href="">Destination</a></li>
+      <li><a href="">Blog</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+  </div>
+  <script>
+  const menuToggle = document.querySelector('.toggle');
+  const showcase = document.querySelector('.showcase');
+
+  menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    showcase.classList.toggle('active');
+  });
+  </script>
+
+</body>
+
 </html>
